@@ -30,4 +30,3 @@ func main() {
 		fmt.Println("no activity")
 	}
 }
-

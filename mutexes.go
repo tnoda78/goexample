@@ -45,7 +45,7 @@ func main() {
 			}
 		}()
 	}
-	
+
 	time.Sleep(time.Second)
 
 	opsFinal := atomic.LoadInt64(&ops)
@@ -55,4 +55,3 @@ func main() {
 	fmt.Println("state:", state)
 	mutex.Unlock()
 }
-

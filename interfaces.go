@@ -6,8 +6,8 @@ import (
 )
 
 type geometry interface {
-	area()	float64
-	perim()	float64
+	area() float64
+	perim() float64
 }
 
 type square struct {
@@ -21,7 +21,7 @@ func (s square) area() float64 {
 	return s.width * s.height
 }
 func (s square) perim() float64 {
-	return 2 * s.width + 2 * s.height
+	return 2*s.width + 2*s.height
 }
 
 func (c circle) area() float64 {
@@ -38,8 +38,8 @@ func measure(g geometry) {
 }
 
 func main() {
-	s := square{ width: 3, height: 4 }
-	c := circle{ radius: 5 }
+	s := square{width: 3, height: 4}
+	c := circle{radius: 5}
 	measure(s)
 	measure(c)
 }

@@ -1,9 +1,9 @@
 package main
 
 import (
-	"syscall"
 	"os"
 	"os/exec"
+	"syscall"
 )
 
 func main() {

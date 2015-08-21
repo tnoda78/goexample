@@ -15,4 +15,3 @@ func main() {
 	_, c := vals()
 	fmt.Println(c)
 }
-

@@ -11,11 +11,11 @@ func (r *rect) area() int {
 }
 
 func (r rect) perim() int {
-	return 2 * r.width + 2 * r.height
+	return 2*r.width + 2*r.height
 }
 
 func main() {
-	r := rect{ width: 10, height: 5}
+	r := rect{width: 10, height: 5}
 
 	fmt.Println("area: ", r.area())
 	fmt.Println("perim:", r.perim())
@@ -24,4 +24,3 @@ func main() {
 	fmt.Println("area: ", rp.area())
 	fmt.Println("perim:", rp.perim())
 }
-

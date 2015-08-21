@@ -21,4 +21,3 @@ func main() {
 	newInts := intSeq()
 	fmt.Println(newInts())
 }
-

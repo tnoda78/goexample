@@ -19,4 +19,3 @@ func main() {
 	f := "short"
 	fmt.Println(f)
 }
-

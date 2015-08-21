@@ -23,4 +23,3 @@ func main() {
 	fmt.Scanln(&input)
 	fmt.Println("done")
 }
-

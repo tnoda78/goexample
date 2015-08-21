@@ -22,4 +22,3 @@ func main() {
 		fmt.Println("Timer 2 stopped")
 	}
 }
-

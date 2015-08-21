@@ -21,7 +21,7 @@ func main() {
 	bolB, _ := json.Marshal(true)
 	fmt.Println(string(bolB))
 
-	intB , _ := json.Marshal(1)
+	intB, _ := json.Marshal(1)
 	fmt.Println(string(intB))
 
 	fltB, _ := json.Marshal(2.34)
@@ -35,19 +35,19 @@ func main() {
 	fmt.Println(string(mapB))
 
 	res1D := &Response1{
-		Page: 1,
+		Page:   1,
 		Fruits: []string{"apple", "peach", "pear"}}
 	res1B, _ := json.Marshal(res1D)
 	fmt.Println(string(res1B))
 
 	res2D := &Response2{
-		Page: 1,
+		Page:   1,
 		Fruits: []string{"apple", "peach", "pear"}}
 	res2B, _ := json.Marshal(res2D)
 	fmt.Println(string(res2B))
 
 	byt := []byte(`{"num":6.13,"strs":["a","b"]}`)
-	
+
 	var dat map[string]interface{}
 
 	if err := json.Unmarshal(byt, &dat); err != nil {

@@ -19,4 +19,3 @@ func main() {
 
 	fmt.Println(math.Sin(n))
 }
-

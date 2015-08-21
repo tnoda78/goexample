@@ -7,16 +7,15 @@ import (
 	"time"
 )
 
-
 type readOp struct {
-	key   int
-	resp  chan int
+	key  int
+	resp chan int
 }
 
 type writeOp struct {
-	key   int
-	val   int
-	resp  chan bool
+	key  int
+	val  int
+	resp chan bool
 }
 
 func main() {
@@ -43,7 +42,7 @@ func main() {
 		go func() {
 			for {
 				read := &readOp{
-					key: rand.Intn(5),
+					key:  rand.Intn(5),
 					resp: make(chan int)}
 				reads <- read
 				<-read.resp
@@ -56,8 +55,8 @@ func main() {
 		go func() {
 			for {
 				write := &writeOp{
-					key: rand.Intn(5),
-					val: rand.Intn(100),
+					key:  rand.Intn(5),
+					val:  rand.Intn(100),
 					resp: make(chan bool)}
 				writes <- write
 				<-write.resp

@@ -32,4 +32,3 @@ func main() {
 		fmt.Println("timeout 2")
 	}
 }
-

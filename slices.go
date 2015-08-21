@@ -12,7 +12,7 @@ func main() {
 	s[2] = "c"
 	fmt.Println("set:", s)
 	fmt.Println("get:", s[2])
-	
+
 	fmt.Println("len:", len(s))
 
 	s = append(s, "d")
@@ -25,13 +25,13 @@ func main() {
 
 	l := s[2:5]
 	fmt.Println("sl1:", l)
-	
+
 	l = s[:5]
 	fmt.Println("sl2:", l)
 
 	l = s[2:]
 	fmt.Println("sl3:", l)
-	
+
 	t := []string{"g", "h", "i"}
 	fmt.Println("dcl:", t)
 
@@ -44,4 +44,3 @@ func main() {
 		}
 	}
 }
-

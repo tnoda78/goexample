@@ -23,5 +23,3 @@ func main() {
 	fmt.Println("svar:", svar)
 	fmt.Println("tail:", flag.Args())
 }
-
-

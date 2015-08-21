@@ -1,8 +1,8 @@
 package main
 
 import (
-	"fmt"
 	"errors"
+	"fmt"
 )
 
 func f1(arg int) (int, error) {
@@ -14,8 +14,8 @@ func f1(arg int) (int, error) {
 }
 
 type argError struct {
-	arg		int
-	prob	string
+	arg  int
+	prob string
 }
 
 func (e *argError) Error() string {
@@ -30,14 +30,14 @@ func f2(arg int) (int, error) {
 }
 
 func main() {
-	for _, i := range []int{ 7, 42 } {
+	for _, i := range []int{7, 42} {
 		if r, e := f1(i); e != nil {
 			fmt.Println("f1 failed", e)
 		} else {
 			fmt.Println("f1 worked:", r)
 		}
 	}
-	for _, i := range []int{ 7, 42 } {
+	for _, i := range []int{7, 42} {
 		if r, e := f2(i); e != nil {
 			fmt.Println("f2 failed", e)
 		} else {

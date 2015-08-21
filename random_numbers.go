@@ -1,9 +1,9 @@
 package main
 
 import (
-	"time"
 	"fmt"
 	"math/rand"
+	"time"
 )
 
 func main() {
@@ -14,7 +14,7 @@ func main() {
 
 	fmt.Println(rand.Float64())
 
-	fmt.Print((rand.Float64() * 5) + 5, ",")
+	fmt.Print((rand.Float64()*5)+5, ",")
 	fmt.Print((rand.Float64() * 5) + 5)
 	fmt.Println()
 
